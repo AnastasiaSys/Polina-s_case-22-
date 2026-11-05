@@ -1,3 +1,11 @@
+// Всегда открываем сайт с начала, а не на середине
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
 const scrollButtons = document.querySelectorAll('[data-scroll]');
 scrollButtons.forEach(button => button.addEventListener('click', () => {
   document.querySelector(button.dataset.scroll)?.scrollIntoView({behavior:'smooth'});
@@ -12,10 +20,11 @@ document.querySelectorAll('.photo-card input').forEach(input => {
     let image = card.querySelector('img');
     if (!image) {
       image = document.createElement('img');
-      card.appendChild(image);
+      card.insertBefore(image, card.querySelector('small'));
     }
     image.src = URL.createObjectURL(file);
-    card.querySelector('.photo-placeholder').textContent = 'ФОТО ДОБАВЛЕНО';
+    const placeholder = card.querySelector('.photo-placeholder');
+    if (placeholder) placeholder.textContent = 'ФОТО ДОБАВЛЕНО';
   });
 });
 
