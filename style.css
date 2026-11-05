@@ -19,80 +19,235 @@ body:before{
     background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");z-index:5
 }
 
-    .masthead{
-        height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:#171616;position:relative;border-bottom:1px solid #ffffff16
-    }
-    
-    .masthead-title{font:400 clamp(48px,9vw,90px)/.85 'Cormorant Garamond',serif;letter-spacing:-4px
-    }
-    
-    .masthead-sub{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#a89cc8;margin-top:18px
-    }
-    
-    .ornament{position:absolute;color:#6b5a9e;font-size:24px}
-    
-    .ornament-top{right:18%;top:45px}
-    
-    .hero{min-height:590px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#b8b0d2dd,#c8c0d9a8 48%,#2e253aaa),url("https://images.unsplash.com/photo-1519681393784-d120267933ba?q=85&w=1800") center/cover}
-    
-    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#c9b7d9a8 0%,#b8c9d355 55%,#19162466 100%)}
-    
-    .hero-copy{position:relative;z-index:1;margin-left:clamp(24px,10vw,150px);max-width:700px;color:#4a3b7e;padding:60px 20px}
-    
-    .back-link{color:#4a2b76;text-decoration:none;font-size:12px}
-    
-    .eyebrow,.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8a6ab4}
-    
-    .eyebrow{margin-top:70px}
-    
-    .hero h1{font:500 clamp(55px,10vw,112px)/.78 'Cormorant Garamond',serif;letter-spacing:-3px;margin:20px 0}
-    
-    .hero h1 em,h2 em{font-weight:400}.hero-note{font:500 16px/1.6 'Cormorant Garamond',serif;color:#29273c}
-    
-    .red-button{border:0;background:#5a308e;color:#fff7ef;padding:15px 30px;letter-spacing:2px;font:600 11px Manrope;cursor:pointer;transition:.2s}
-    
-    .red-button:hover{background:#6a4aad;transform:translateY(-2px)}
-    
-    .red-button span{margin-left:25px}
-    
-    .hero-side{position:absolute;z-index:1;right:7%;bottom:45px;color:#f8eee7;font:12px/1.7 Manrope;letter-spacing:3px;text-align:right}
-    
-    .hero-side b{font:32px 'Cormorant Garamond';color:#c9bcf0}
-    
-    .chapter-intro{background:#5a308e;padding:75px max(22px,calc((100% - 1040px)/2)) 85px;text-align:center}
-    
-    .chapter-intro .section-label{color:#c1b8f0}
-    
-    .chapter-intro h2,.section h2{font:400 clamp(38px,7vw,68px)/.88 'Cormorant Garamond';margin:20px 0}
-    
-    .chapter-intro h2 em{color:#b9ade5}
-    
-    .intro-text{max-width:560px;margin:0 auto;color:#dad2f2;font-size:13px;line-height:1.8}
-    
-    .chapter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:45px auto 0;max-width:1000px}.chapter-card{min-height:245px;background:#f5f0e9;color:#242020;text-align:left;padding:22px;display:flex;flex-direction:column;text-decoration:none;position:relative;box-shadow:0 14px 35px #32161655;transition:.25s}
-    
-    .chapter-card:hover{transform:translateY(-7px)}.chapter-card.red-card{background:#241f20;color:#f5eee7;border:1px solid #a9a0cd}
-    
-    .card-number{font-size:9px;letter-spacing:2px;color:#4b48a0}
-    
-    .card-art{font:90px 'Cormorant Garamond';align-self:flex-end;color:#45449a;line-height:1}
-    
-    .cherub{font-size:65px}.tarot-mark{font-size:75px}
-    
-    .chapter-card strong{font:500 30px/.9 'Cormorant Garamond';margin-top:auto}
-    
-    .chapter-card small{font-size:10px;line-height:1.5;margin-top:13px;color:inherit;opacity:.75}
-    
-    .warning-panel{max-width:900px;margin:70px auto;padding:48px 40px;background:linear-gradient(135deg,#262323,#101010);border:1px solid #66514d;box-shadow:0 20px 60px #0007;position:relative;text-align:center}
-    
-    .warning-top{font:400 clamp(36px,7vw,66px) 'Cormorant Garamond';color:#bdb4d4}
-    
-    .keyhole{width:120px;height:145px;border:2px solid #8d7fb9;border-radius:60px 60px 8px 8px;margin:25px auto;display:grid;place-items:center;font:58px 'Cormorant Garamond';color:#a99bd3;box-shadow:inset 0 0 30px #4a4aa333}
-    
-    .warning-columns{display:grid;grid-template-columns:1fr 1fr;gap:45px;text-align:left}
-    
-    .warning-columns h3{font:italic 29px 'Cormorant Garamond';color:#b9aed7}
-    
-    .warning-columns p{font-size:11px;line-height:1.8;color:#c5b9b4}.section{max-width:1100px;margin:auto;padding:90px 24px}
-    
-    .section h2{color:#f0e7df}.section h2 em{color:#7a72c1}.section-lead{font-size:13px;line-height:1.8;color:#bfb4ae;max-width:680px}.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}.photo-card{height:250px;background:#282424;border:1px solid #5e454d;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;cursor:pointer;overflow:hidden;text-align:center}.photo-card input{position:absolute;inset:0;opacity:0;cursor:pointer;z-index:3}.photo-placeholder{font:20px 'Cormorant Garamond';color:#8e84c8;padding:12px}.photo-card small{position:absolute;bottom:14px;color:#c6bdd6;font-size:9px;letter-spacing:1px}.photo-card img{position:absolute;width:100%;height:100%;object-fit:cover}.tiny-note{font-size:10px;color:#817773;margin-top:14px}.fitness{position:relative;background:#5a308e;max-width:none;padding-left:max(24px,calc((100% - 1050px)/2));padding-right:max(24px,calc((100% - 1050px)/2))}.fitness .section-label{color:#c3bbf1}.fitness-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}.fitness-card{background:#f3eee8;color:#282121;min-height:220px;padding:25px}.fitness-card>span{font:28px 'Cormorant Garamond';color:#4b49a4}.fitness-card h3{font:500 25px 'Cormorant Garamond';margin:25px 0 10px}.fitness-card p{font-size:11px;line-height:1.7}.fitness-stamp{position:absolute;right:8%;top:40px;border:1px solid #b9ade3;border-radius:50%;width:115px;height:115px;display:grid;place-content:center;text-align:center;font-size:8px;letter-spacing:2px;transform:rotate(12deg);color:#d6cdf5}.fitness-stamp b{font:22px 'Cormorant Garamond'}.tarot{text-align:center}.tarot .section-lead{margin:0 auto}.tarot-board{display:flex;justify-content:center;gap:22px;margin:40px auto 25px;flex-wrap:wrap}.tarot-card{width:170px;height:270px;padding:9px;border:1px solid #9b8ec4;background:#5a308e;cursor:pointer;transition:.25s;box-shadow:0 12px 30px #0005}.tarot-card:hover{transform:translateY(-10px) rotate(-2deg)}.tarot-frame{height:100%;border:1px solid #c7b8e8;display:flex;flex-direction:column;align-items:center;justify-content:space-around;color:#f5e8dd}.tarot-frame i{font:54px 'Cormorant Garamond'}.tarot-frame b{font:19px 'Cormorant Garamond'}.tarot-frame strong{font:23px 'Cormorant Garamond';letter-spacing:2px}.tarot-frame small{font-size:8px;letter-spacing:3px}.tarot-result{max-width:650px;margin:20px auto;padding:22px;border:1px solid #4a456a;background:#211d1d;color:#d6cee7;font:20px/1.6 'Cormorant Garamond';min-height:85px}.quest{background:#242020;max-width:none;padding-left:max(24px,calc((100% - 1000px)/2));padding-right:max(24px,calc((100% - 1000px)/2))}.quiz-box{max-width:650px;margin:35px auto 0;background:#f3eee8;color:#292323;padding:30px}.quiz-meta{font-size:9px;letter-spacing:2px;color:#434298}.quiz-track{height:4px;background:#c7c0d6;margin:14px 0 25px}.quiz-track span{display:block;width:0;height:100%;background:#3e3e98;transition:.3s}.quiz-box h3{font:26px 'Cormorant Garamond';font-weight:600}.quiz-answers{display:grid;gap:9px;margin-top:20px}.quiz-answers button{padding:13px;text-align:left;background:#fff;border:1px solid #c8c1d6;color:#332929;cursor:pointer;font:12px Manrope}.quiz-answers button:hover{border-color:#47459a}.quiz-feedback{min-height:22px;color:#403f91;font-size:11px}.quiz-finish{max-width:650px;margin:20px auto;padding:25px;border:1px solid #8d80c3;text-align:center}.quiz-finish h3{font:26px 'Cormorant Garamond'}.letter-trigger{display:flex;align-items:center;gap:18px;background:#5a308d;color:#fff;padding:18px 25px;border:0;cursor:pointer;letter-spacing:2px;margin-top:35px}.letter-trigger span{font:36px 'Cormorant Garamond'}.letter-trigger b{font-size:10px}.letter-content{max-width:720px;margin-top:25px;padding:35px;background:#eee6dd;color:#332b29;font:16px/1.9 'Cormorant Garamond';font-size:19px}.letter-dear,.letter-sign{font-size:26px;color:#3c3e91}.letter-sign{text-align:right}footer{text-align:center;padding:40px 15px;background:#101010;color:#8c7770;font-size:9px;letter-spacing:2px}button:focus-visible,a:focus-visible{outline:2px solid #a8b7e8;outline-offset:4px}@media(max-width:700px){.masthead{height:150px}.hero{min-height:520px}.hero-copy{margin-left:12px}.hero-side{right:5%;font-size:9px}.chapter-grid,.fitness-grid{grid-template-columns:1fr}.chapter-card{min-height:200px}.warning-panel{margin:35px 15px;padding:30px 22px}.warning-columns{grid-template-columns:1fr;gap:12px}.photo-grid{grid-template-columns:repeat(2,1fr)}.photo-card{height:190px}.fitness-stamp{position:static;margin:28px auto 0}.tarot-card{width:135px;height:220px}.section{padding:65px 18px}.letter-content{padding:22px;font-size:17px}}
+.masthead{
+    height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:#171616;position:relative;border-bottom:1px solid #ffffff16
+}
+
+.masthead-title{font:400 clamp(48px,9vw,90px)/.85 'Cormorant Garamond',serif;letter-spacing:-4px
+}
+
+.masthead-sub{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#a89cc8;margin-top:18px
+}
+
+.ornament{position:absolute;color:#6b5a9e;font-size:24px}
+
+.ornament-top{right:18%;top:45px}
+
+.hero{min-height:590px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#b8b0d2dd,#c8c0d9a8 48%,#2e253aaa),url("https://images.unsplash.com/photo-1519681393784-d120267933ba?q=85&w=1800") center/cover}
+
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#c9b7d9a8 0%,#b8c9d355 55%,#19162466 100%)}
+
+.hero-copy{position:relative;z-index:1;margin-left:clamp(24px,10vw,150px);max-width:700px;color:#4a3b7e;padding:60px 20px}
+
+.back-link{color:#4a2b76;text-decoration:none;font-size:12px}
+
+.eyebrow,.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8a6ab4}
+
+.eyebrow{margin-top:70px}
+
+.hero h1{font:500 clamp(55px,10vw,112px)/.78 'Cormorant Garamond',serif;letter-spacing:-3px;margin:20px 0}
+
+.hero h1 em,h2 em{font-weight:400}.hero-note{font:500 16px/1.6 'Cormorant Garamond',serif;color:#29273c}
+
+.red-button{border:0;background:#5a308e;color:#fff7ef;padding:15px 30px;letter-spacing:2px;font:600 11px Manrope;cursor:pointer;transition:.2s}
+
+.red-button:hover{background:#6a4aad;transform:translateY(-2px)}
+
+.red-button span{margin-left:25px}
+
+.hero-side{position:absolute;z-index:1;right:7%;bottom:45px;color:#f8eee7;font:12px/1.7 Manrope;letter-spacing:3px;text-align:right}
+
+.hero-side b{font:32px 'Cormorant Garamond';color:#c9bcf0}
+
+.chapter-intro{background:#5a308e;padding:75px max(22px,calc((100% - 1040px)/2)) 85px;text-align:center}
+
+.chapter-intro .section-label{color:#c1b8f0}
+
+.chapter-intro h2,.section h2{font:400 clamp(38px,7vw,68px)/.88 'Cormorant Garamond';margin:20px 0}
+
+.chapter-intro h2 em{color:#b9ade5}
+
+.intro-text{max-width:560px;margin:0 auto;color:#dad2f2;font-size:13px;line-height:1.8}
+
+.chapter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:45px auto 0;max-width:1000px}.chapter-card{min-height:245px;background:#f5f0e9;color:#242020;text-align:left;padding:22px;display:flex;flex-direction:column;text-decoration:none;position:relative;box-shadow:0 14px 35px #32161655;transition:.25s}
+
+.chapter-card:hover{transform:translateY(-7px)}.chapter-card.red-card{background:#241f20;color:#f5eee7;border:1px solid #a9a0cd}
+
+.card-number{font-size:9px;letter-spacing:2px;color:#4b48a0}
+
+.card-art{font:90px 'Cormorant Garamond';align-self:flex-end;color:#45449a;line-height:1}
+
+.cherub{font-size:65px}.tarot-mark{font-size:75px}
+
+.chapter-card strong{font:500 30px/.9 'Cormorant Garamond';margin-top:auto}
+
+.chapter-card small{font-size:10px;line-height:1.5;margin-top:13px;color:inherit;opacity:.75}
+
+.warning-panel{max-width:900px;margin:70px auto;padding:48px 40px;background:linear-gradient(135deg,#262323,#101010);border:1px solid #66514d;box-shadow:0 20px 60px #0007;position:relative;text-align:center}
+
+.warning-top{font:400 clamp(36px,7vw,66px) 'Cormorant Garamond';color:#bdb4d4}
+
+.keyhole{width:120px;height:145px;border:2px solid #8d7fb9;border-radius:60px 60px 8px 8px;margin:25px auto;display:grid;place-items:center;font:58px 'Cormorant Garamond';color:#a99bd3;box-shadow:inset 0 0 30px #4a4aa333}
+
+.warning-columns{display:grid;grid-template-columns:1fr 1fr;gap:45px;text-align:left}
+
+.warning-columns h3{font:italic 29px 'Cormorant Garamond';color:#b9aed7}
+
+.warning-columns p{font-size:11px;line-height:1.8;color:#c5b9b4}
+
+.section{max-width:1100px;margin:auto;padding:90px 24px}
+
+.section h2{color:#f0e7df}.section h2 em{color:#7a72c1}
+
+.section-lead{font-size:13px;line-height:1.8;color:#bfb4ae;max-width:680px}
+
+/* === ФОТО-КАРТОЧКИ: картинка сверху, подпись снизу === */
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}
+
+.photo-card{
+    background:#282424;
+    border:1px solid #5e454d;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+}
+
+.photo-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+    flex:0 0 220px;
+    background:#1d1a1a;
+}
+
+.photo-card small{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 12px;
+    min-height:56px;
+    color:#e6dcf3;
+    background:#1f1b1b;
+    font-size:10px;
+    line-height:1.5;
+    letter-spacing:.5px;
+    border-top:1px solid #5e454d;
+}
+
+.photo-card input{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    cursor:pointer;
+    z-index:3;
+}
+
+.photo-placeholder{
+    font:20px 'Cormorant Garamond';
+    color:#8e84c8;
+    padding:12px;
+}
+
+.tiny-note{font-size:10px;color:#817773;margin-top:14px}
+
+.fitness{position:relative;background:#5a308e;max-width:none;padding-left:max(24px,calc((100% - 1050px)/2));padding-right:max(24px,calc((100% - 1050px)/2))}
+
+.fitness .section-label{color:#c3bbf1}
+
+.fitness-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+
+.fitness-card{background:#f3eee8;color:#282121;min-height:220px;padding:25px}
+
+.fitness-card>span{font:28px 'Cormorant Garamond';color:#4b49a4}
+
+.fitness-card h3{font:500 25px 'Cormorant Garamond';margin:25px 0 10px}
+
+.fitness-card p{font-size:11px;line-height:1.7}
+
+.fitness-stamp{position:absolute;right:8%;top:40px;border:1px solid #b9ade3;border-radius:50%;width:115px;height:115px;display:grid;place-content:center;text-align:center;font-size:8px;letter-spacing:2px;transform:rotate(12deg);color:#d6cdf5}
+
+.fitness-stamp b{font:22px 'Cormorant Garamond'}
+
+.tarot{text-align:center}
+
+.tarot .section-lead{margin:0 auto}
+
+.tarot-board{display:flex;justify-content:center;gap:22px;margin:40px auto 25px;flex-wrap:wrap}
+
+.tarot-card{width:170px;height:270px;padding:9px;border:1px solid #9b8ec4;background:#5a308e;cursor:pointer;transition:.25s;box-shadow:0 12px 30px #0005}
+
+.tarot-card:hover{transform:translateY(-10px) rotate(-2deg)}
+
+.tarot-frame{height:100%;border:1px solid #c7b8e8;display:flex;flex-direction:column;align-items:center;justify-content:space-around;color:#f5e8dd}
+
+.tarot-frame i{font:54px 'Cormorant Garamond'}
+
+.tarot-frame b{font:19px 'Cormorant Garamond'}
+
+.tarot-frame strong{font:23px 'Cormorant Garamond';letter-spacing:2px}
+
+.tarot-frame small{font-size:8px;letter-spacing:3px}
+
+.tarot-result{max-width:650px;margin:20px auto;padding:22px;border:1px solid #4a456a;background:#211d1d;color:#d6cee7;font:20px/1.6 'Cormorant Garamond';min-height:85px}
+
+.quest{background:#242020;max-width:none;padding-left:max(24px,calc((100% - 1000px)/2));padding-right:max(24px,calc((100% - 1000px)/2))}
+
+.quiz-box{max-width:650px;margin:35px auto 0;background:#f3eee8;color:#292323;padding:30px}
+
+.quiz-meta{font-size:9px;letter-spacing:2px;color:#434298}
+
+.quiz-track{height:4px;background:#c7c0d6;margin:14px 0 25px}
+
+.quiz-track span{display:block;width:0;height:100%;background:#3e3e98;transition:.3s}
+
+.quiz-box h3{font:26px 'Cormorant Garamond';font-weight:600}
+
+.quiz-answers{display:grid;gap:9px;margin-top:20px}
+
+.quiz-answers button{padding:13px;text-align:left;background:#fff;border:1px solid #c8c1d6;color:#332929;cursor:pointer;font:12px Manrope}
+
+.quiz-answers button:hover{border-color:#47459a}
+
+.quiz-feedback{min-height:22px;color:#403f91;font-size:11px}
+
+.quiz-finish{max-width:650px;margin:20px auto;padding:25px;border:1px solid #8d80c3;text-align:center}
+
+.quiz-finish h3{font:26px 'Cormorant Garamond'}
+
+.letter-trigger{display:flex;align-items:center;gap:18px;background:#5a308d;color:#fff;padding:18px 25px;border:0;cursor:pointer;letter-spacing:2px;margin-top:35px}
+
+.letter-trigger span{font:36px 'Cormorant Garamond'}
+
+.letter-trigger b{font-size:10px}
+
+.letter-content{max-width:720px;margin-top:25px;padding:35px;background:#eee6dd;color:#332b29;font:16px/1.9 'Cormorant Garamond';font-size:19px}
+
+.letter-dear,.letter-sign{font-size:26px;color:#3c3e91}
+
+.letter-sign{text-align:right}
+
+footer{text-align:center;padding:40px 15px;background:#101010;color:#8c7770;font-size:9px;letter-spacing:2px}
+
+button:focus-visible,a:focus-visible{outline:2px solid #a8b7e8;outline-offset:4px}
+
+@media(max-width:700px){
+    .masthead{height:150px}
+    .hero{min-height:520px}
+    .hero-copy{margin-left:12px}
+    .hero-side{right:5%;font-size:9px}
+    .chapter-grid,.fitness-grid{grid-template-columns:1fr}
+    .chapter-card{min-height:200px}
+    .warning-panel{margin:35px 15px;padding:30px 22px}
+    .warning-columns{grid-template-columns:1fr;gap:12px}
+    .photo-grid{grid-template-columns:repeat(2,1fr)}
+    .photo-card img{height:170px;flex:0 0 170px}
+    .photo-card small{min-height:52px;font-size:9px}
+    .fitness-stamp{position:static;margin:28px auto 0}
+    .tarot-card{width:135px;height:220px}
+    .section{padding:65px 18px}
+    .letter-content{padding:22px;font-size:17px}
+}
